@@ -42,7 +42,7 @@ znak=2;
 if( ind>0)break a;
 ind=s.indexOf('/');
 znak=3; 
-if(ind==-1)return "íå ÿâëÿåòñÿ ìàòåìàòè÷êåñêèì ïðèìåðîì";
+if(ind==-1)return "не является математическим примером";
    }//a
 try{
 
