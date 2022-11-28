@@ -42,7 +42,7 @@ znak=2;
 if( ind>0)break a;
 ind=s.indexOf('/');
 znak=3; 
-if(ind==-1)return "не является математичкеским примером";
+if(ind==-1)return "Г­ГҐ ГїГўГ«ГїГҐГІГ±Гї Г¬Г ГІГҐГ¬Г ГІГЁГ·ГЄГҐГ±ГЄГЁГ¬ ГЇГ°ГЁГ¬ГҐГ°Г®Г¬";
    }//a
 try{
 
@@ -51,7 +51,7 @@ String str1=s.substring(0,ind);
 String str2=s.substring( ind+1,s.length());
 
 if(str1.charAt(0)=='I'||str1.charAt(0)=='V'){ 
-if(str2.charAt(0)!='I'&&str2.charAt(0)!='V')return "оба числа должны принадлежать одной системе чисел!";else {str1=RimToNum(str1);str2=RimToNum(str2);  } }
+if(str2.charAt(0)!='I'&&str2.charAt(0)!='V')return "Г®ГЎГ  Г·ГЁГ±Г«Г  Г¤Г®Г«Г¦Г­Г» ГЇГ°ГЁГ­Г Г¤Г«ГҐГ¦Г ГІГј Г®Г¤Г­Г®Г© Г±ГЁГ±ГІГҐГ¬ГҐ Г·ГЁГ±ГҐГ«!";else {str1=RimToNum(str1);str2=RimToNum(str2);  } }
 
 int i1=Integer.parseInt(str1);
 int i2=Integer.parseInt(str2);
@@ -59,12 +59,12 @@ switch(znak){
 case 0:
 return ""+(i1+i2);
 case 1:
-return ""+(i1-i2<0&&isRim?" в римской системе нет отрицательных чисел":i1-i2); 
+return ""+(i1-i2<0&&isRim?" Гў Г°ГЁГ¬Г±ГЄГ®Г© Г±ГЁГ±ГІГҐГ¬ГҐ Г­ГҐГІ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ«":i1-i2); 
 case 2:
 return ""+(i1*i2); 
 case 3:
-return ""+(i1/i2<0&&isRim?" в римской системе нет отрицательных чисел":i1/i2); }
-} catch(Exception ex){return ex.toString(); } 
+return ""+(i1/i2<0&&isRim?" Гў Г°ГЁГ¬Г±ГЄГ®Г© Г±ГЁГ±ГІГҐГ¬ГҐ Г­ГҐГІ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Гµ Г·ГЁГ±ГҐГ«":i1/i2); }
+} catch(Exception ex){return "РЅРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ!"; } 
 return "not correct format"; 
   }
 
